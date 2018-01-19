@@ -9,8 +9,7 @@ gem 'pg'
 gem 'rails', '4.2.5.2'
 gem 'unicorn'
 
-# Use sqlite3 as the database for Active Record
-gem 'sqlite3'
+
 
 
 # Gems used only for assets and not required
@@ -27,6 +26,7 @@ group :development, :test do
   gem 'rspec-mocks', '3.4.1'
   gem 'test-unit', '~> 3.0'
   gem "dotenv-rails"
+  gem 'sqlite3'
 end
 
 # To use ActiveModel has_secure_password
