@@ -7,7 +7,6 @@ gem 'delayed_job_active_record', '~> 4.0.3'
 gem 'devise'
 gem 'rails', '4.2.5.2'
 gem 'unicorn'
-gem 'puma'
 
 
 
@@ -41,6 +40,6 @@ end
 
 group :production do
   gem 'rails_12factor'
-  gem 'rails_serve_static_assets'
+  #gem 'rails_serve_static_assets'
   gem 'pg'
 end
