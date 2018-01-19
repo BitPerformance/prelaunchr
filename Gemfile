@@ -5,9 +5,12 @@ ruby '2.3.0'
 gem 'activeadmin', '1.0.0.pre2'
 gem 'delayed_job_active_record', '~> 4.0.3'
 gem 'devise'
-gem 'pg'
+gem 'pg', group: :production # Added postgres and made it production only.
 gem 'rails', '4.2.5.2'
 gem 'unicorn'
+
+# Use sqlite3 as the database for Active Record
+gem 'sqlite3', group: :development # Added development group.
 
 
 # Gems used only for assets and not required
